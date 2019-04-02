@@ -77,7 +77,16 @@ class_names <- read.csv('./data/kmnist_classmap.csv',
                         header = T, sep = ",", stringsAsFactors = F)$index
 
 # view some images
-show_digit(train_images[10001, ,])
+show_digit(train_images[101, ,])
+
+for (i in  1: 50) {
+  jpeg(paste0('./images/base_', i, '.jpg'))
+  img <- train_images[i, , ]
+  img <- t(apply(img, 2, rev))
+  image(1:28, 1:28, img, col = gray((255:0)/255), xaxt = 'n', yaxt = 'n')
+  dev.off()
+}
+
 
 # preprocessing
 train_images <- train_images / 255

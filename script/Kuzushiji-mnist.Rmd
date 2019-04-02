@@ -1,0 +1,23 @@
+---
+title: "Image recognization on Kuzushiji-mnist dataset by R"
+author: "Hui YAN"
+date: "18/01/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Kuzushiji （崩し字）
+Yesterday when I was watching Kaggle's No Free Hunch, I found an article about Japanese cursives, originally an article in the NIPS 2018 workshop.
+    
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
